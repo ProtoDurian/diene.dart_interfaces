@@ -1,0 +1,25 @@
+{ treefmt-nix, pkgs, ... }:
+let
+  fmt = {
+    projectRootFile = "flake.nix";
+
+    # ### workspace-formatters
+    # #### source: workspace
+    programs = {
+      actionlint.enable = true;
+      nixfmt.enable = true;
+      prettier = {
+        enable = true;
+        excludes = [
+          ".claude/skills/vendor/**"
+          "Changelog.md"
+          "docs/developer/CommitConventions.md"
+          "infra/root_chart/**"
+          "packages/diene_interfaces/test/fixtures/c0/problem-envelope.json"
+        ];
+      };
+      shfmt.enable = true;
+    };
+  };
+in
+(treefmt-nix.lib.evalModule pkgs fmt).config.build.wrapper
