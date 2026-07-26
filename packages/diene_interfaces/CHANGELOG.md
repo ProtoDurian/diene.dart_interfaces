@@ -1,9 +1,8 @@
 ## 1.0.0 (2026-07-26)
 
-
 ### ✨ Features ✨
 
-* **dart-interfaces:** seed diene_interfaces mirror ([62fc02a](https://github.com/AtomiCloud/diene.dart_interfaces/commit/62fc02ac2ff53c09c8316bde8935e100dfebcc44))
+- **dart-interfaces:** seed diene_interfaces mirror ([62fc02a](https://github.com/AtomiCloud/diene.dart_interfaces/commit/62fc02ac2ff53c09c8316bde8935e100dfebcc44))
 
 # Changelog
 
